@@ -8,14 +8,17 @@
   
 #### Step 2:
    Goto programmable sms.
+   
    Link : https://www.twilio.com/console/sms/dashboard
   
-#### Sttep 3:
+#### Step 3:
    Create messaging service.
+   
    Ex: Test 1
   
 #### Step 4:
   In Configure In Inbound Settings set REQUEST URL.
+  
   Ex: http://159.203.239.91/twilio1.0/requestHandler.php
   
 #### Step 5:
