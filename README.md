@@ -22,7 +22,7 @@
   Ex: http://159.203.239.91/twilio1.0/requestHandler.php
   
 #### Step 5:
-  * Request  : To this url the twilo server will send a request containing contactnumber, message, country code etc.
+  * Request  : To this url the twilio server will send a request containing contactnumber, message, country code etc.
   * Response : This file should return proper xml formated output.
   
 #### Step 6:
