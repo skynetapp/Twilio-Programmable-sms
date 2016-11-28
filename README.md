@@ -58,7 +58,7 @@ Modules | Twilio | Twilio Controller, Twilio Action, Twilio MySql
 #### Step 6:
    In Class **TwilioMySQL**, **insertIntoTwilioRequest($post_data)** will be called to insert the message into table.
   
-    **_Code:_**
+   **_Code:_**
 	
 ```
    public function insertIntoTwilioRequest($input_arr){
