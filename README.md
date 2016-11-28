@@ -1,11 +1,22 @@
 #### Date: 25-11-2016
 #### Description: Twilio programmable sms
 
+#### The Folder Structure is as follows:
+   
+   
+   Root Directory | Sub Directory
+------------ | ------------- 
+index.php | | |
+Global | DBmysql(MySQL Connection), AlchemyAPI(Alchemy API Connection)  |
+Lib | Smarty,Common functions,AlchemyAPI |
+Modules | AlchemyExtract | Alchemy Extract Controller, Alchemy Extract Action, Alchemy Extract MySql
+
+
 #### The flow is as follows:
 
 #### Step 1:
-  Login with credentials.
-  
+  Login with your registered Email and Password credentials.
+ 
 #### Step 2:
    Goto programmable sms.
    
