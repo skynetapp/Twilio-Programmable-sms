@@ -107,7 +107,7 @@ function insertIntoRequest($return,$fileName,$fileExt,$resume_upload,$resumekey)
 			$requestId=mysql_insert_id();
 			return $requestId;
 		} 
-		 ```
+ ```
 #### Step 8:
    The message request will be passed to Alchemy API response function **entities('text', $inputString, null)**.
   
