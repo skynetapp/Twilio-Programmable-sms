@@ -7,9 +7,9 @@
    Root Directory | Sub Directory
 ------------ | ------------- 
 index.php | | |
-Global | DBmysql(MySQL Connection), AlchemyAPI(Alchemy API Connection)  |
-Lib | Smarty,Common functions,AlchemyAPI |
-Modules | AlchemyExtract | Alchemy Extract Controller, Alchemy Extract Action, Alchemy Extract MySql
+Global | DBmysql(MySQL Connection)  |
+Lib | AlchemyAPI |
+Modules | Twilio | Twilio Controller, Twilio Action, Twilio MySql
 
 
 #### The flow is as follows:
@@ -34,6 +34,24 @@ Modules | AlchemyExtract | Alchemy Extract Controller, Alchemy Extract Action, A
   
 #### Step 5:
   * Request  : To this url the twilio server will send a request containing contactnumber, message, country code etc.
+  
+  **_Code:_**
+	
+```
+   public function requestProcessor($post_data){
+    
+	$data= new DBMySQL();
+	$connection=$data->getConnection();
+    $data= new TwilioMysql();
+	$data->setTwilioMySQLConnection($connection);
+	$data->insertIntoTwilioRequest($post_data);
+    
+	// parsing alchemy api  
+    $twilio_action = TwilioAction::getInstance();
+	$result = $twilio_action->twilioAlchemyProcessorAction($post_data); //create value object with listing parameters if any.
+			
+    }
+  ```
   * Response : This file should return proper xml formated output.
   
 #### Step 6:
