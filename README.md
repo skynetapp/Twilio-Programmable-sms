@@ -35,7 +35,7 @@ Modules | Twilio | Twilio Controller, Twilio Action, Twilio MySql
 #### Step 5:
   Request  : To this url the twilio server will send a request containing contactnumber, message, country code etc.
   
-  Function **requestProcessor** will be called in Controller. requestHandler.php -> Modules -> Twilio -> TwilioController.php
+  Function **requestProcessor** will be called from requestHandler.php to  Modules -> Twilio -> TwilioController.php
   
   **_Code:_**
 	
