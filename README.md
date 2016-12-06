@@ -35,7 +35,11 @@ Modules | Twilio | Twilio Controller, Twilio Action, Twilio MySql
 #### Step 5:
   Request  : To this url the twilio server will send a request containing contactnumber, message, country code etc.
   
-  Function **requestProcessor** will be called from requestHandler.php to  Modules -> Twilio -> TwilioController.php
+  * When a user sends a  request from his mobile to the generated mobile number in twilio server, we can see a entry as incoming message in the messaging service **Test1** which we have created.
+  * The message request will hit the REQUEST URL and if the xml response is correct, reply message will be sent to the user for his request.
+  * If the xml response is not correct warning message will be shown in the error log. 
+  
+Function **requestProcessor** will be called from requestHandler.php to  Modules -> Twilio -> TwilioController.php
   
   **_Code:_**
 	
